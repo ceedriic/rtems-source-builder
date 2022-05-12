@@ -1,0 +1,12 @@
+--- isl/config.sub.orig	2022-05-11 07:19:04.000000000 +0200
++++ isl/config.sub	2022-05-11 07:19:26.000000000 +0200
+@@ -516,6 +516,9 @@
+ 		basic_machine=m68k-apollo
+ 		os=-bsd
+ 		;;
++	arm64-*)
++		basic_machine=aarch64-`echo "$basic_machine" | sed 's/^[^-]*-//'`
++		;;
+ 	aros)
+ 		basic_machine=i386-pc
+ 		os=-aros

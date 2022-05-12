@@ -1,0 +1,13 @@
+--- mpc/build-aux/config.sub.orig	2022-05-11 09:20:51.000000000 +0200
++++ mpc/build-aux/config.sub	2022-05-11 09:23:47.000000000 +0200
+@@ -916,6 +916,10 @@
+ 		cpu=sparc
+ 		vendor=`echo "$basic_machine" | sed 's/-.*//'`
+ 		;;
++	arm64-*)
++		cpu=aarch64
++		vendor=`echo "$basic_machine" | sed 's/-.*//'`
++		;;
+ 
+ 	*-*)
+ 		# shellcheck disable=SC2162
